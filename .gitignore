@@ -60,7 +60,7 @@ Thumbs.db
 *.mtc
 *.mtc1
 *.synctex.gz
-*.pdf
+# *.pdf
 *.bst
 
 

@@ -5,7 +5,7 @@
 ## BEAST
 
 ### Installation (local machine)
-- [BEAST-2.6.3 for Windows (w/ java)](http://www.beast2.org/download-windows-with-jre/)
+- [BEAST-2.6.3 for Windows (w/ Java)](http://www.beast2.org/download-windows-with-jre/)
 
 ### Installing new packages (e.g. SNAPP)
 - Do `packagemanager -add SNAPP`. The `packagemanager` script is located within BEAST installation (e.g. `beast/bin/packagemanager`). Reading it is helpful for understanding the BEAST/JAVA environment variables and how they are used.
@@ -17,9 +17,28 @@
 
 ### Multi-threading
 
+### Adjusting transition kernels
+
 ### Debugging
 - [Beast-users google-group](https://groups.google.com/g/beast-users)
 
+---
+## TRACER
+### Useful tutorials
+- https://beast.community/analysing_beast_output
+- https://beast.community/tracer_convergence
+
+### Why is the no. of states in the trace-plot greater than the no. of states in the trace-file?
+- This is a bug that seems to arise from simultaneously viewing multiple trace files all with the same name. The issue is resolved by giving the trace files distinct names.  
+
+### What is the `TreeHeightLogger` variable?
+- Has the lowest ESS among the estimated quantities.
+
+### Why do some `theta`s (ancestral effective population sizes) show more variation across their marginal density plots for different runs?
+
+---
+## Tree Set Analyzer
+- `./AppLauncher.exe  TreeSetAnalyser -options`
 ---
 ## JAVA 
 ### What does the `java` command do?
